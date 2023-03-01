@@ -1,0 +1,15 @@
+1. Find the Google Font on fontsource.org
+
+2. Type "npm install @fontsource/<font-name>
+
+3. In import section of astro file, type "import '@fontsource/<font-name>;
+
+4. Go to tailwind.config.cjs and an entry in the fontFamily section. Write 
+the name of the Tailwind style you will use and paste the CSS rule from 
+Google Fonts inside a [], like this:
+
+theme: {
+	fontFamily:{
+		<name>: [<css rule>],
+	},	
+},
