@@ -7,6 +7,8 @@ module.exports = {
 	theme: {
 		fontFamily:{
 			title: ['"Paytone One"','sans-serif'],
+			button: ['Sora', 'sans-serif'],
+			code: ["Source Code Pro", 'monospace'],
 		},
 		extend: {
 		},
