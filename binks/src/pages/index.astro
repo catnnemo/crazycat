@@ -3,6 +3,7 @@ import '@fontsource/paytone-one';
 import '@fontsource/sora';
 import '@fontsource/source-code-pro'
 import Navbar from '../components/navbar.astro';
+import Modal from '../components/modal.astro';
 ---
 
 <html lang="en">
@@ -37,7 +38,7 @@ import Navbar from '../components/navbar.astro';
 			<div id="contact" class="
 			flex flex-col 
 			m-auto mt-10">
-				<button class="
+				<button onclick="{`window.${id}.showModal()`}" class="
 				font-title 
 				bg-black 
 				rounded-xl w-8/9 
