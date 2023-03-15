@@ -1,0 +1,51 @@
+---
+// Component Imports
+import Modal from '../components/modal.astro';
+// You can import components from any supported Framework here!
+
+
+// Component Script:
+// You can write any JavaScript/TypeScript that you'd like here.
+// It will run during the build, but never in the browser.
+// All variables are available to use in the HTML template below.
+let title = 'Dont mind this nonsense its only a test';
+
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+
+console.log("Does this work?");
+---
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{title}</title>
+</head>
+<body>
+    <main>
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">Open Modal</button>
+    <button id="close">&times</button>
+    <div id="hey" class="hidden"><Modal></Modal></div>
+    <script>
+        
+        let button = document.getElementById("myBtn");
+        let hey = document.getElementById("hey");
+        let close = document.getElementById("close");
+
+        button.onclick = function(){
+            console.log("Clicked button");
+            hey.className = "block"
+        }
+
+        close.onclick = function(){
+            hey.className = "hidden";
+        }
+        
+    </script>
+
+    </main>
+</body>
+
+</html>
